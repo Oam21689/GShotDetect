@@ -11,14 +11,17 @@
 		B70413A729BC811D00247443 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70413A629BC811D00247443 /* ContentView.swift */; };
 		B70413A929BC811D00247443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70413A829BC811D00247443 /* Assets.xcassets */; };
 		B70413AC29BC811D00247443 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70413AB29BC811D00247443 /* Preview Assets.xcassets */; };
+		B74528B329BD8FB80012B22A /* Gunshotdetect.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B74528B229BD8FB80012B22A /* Gunshotdetect.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B70413A129BC811D00247443 /* GShotDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GShotDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B70413A429BC811D00247443 /* GShotDetectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GShotDetectApp.swift; sourceTree = "<group>"; };
+		B70413A429BC811D00247443 /* GShotDetectApp.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = GShotDetectApp.swift; sourceTree = "<group>"; };
 		B70413A629BC811D00247443 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B70413A829BC811D00247443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B70413AB29BC811D00247443 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B74528B229BD8FB80012B22A /* Gunshotdetect.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Gunshotdetect.mlmodel; sourceTree = "<group>"; };
+		B7A54F3429BD7BA300B12B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 		B70413A329BC811D00247443 /* GShotDetect */ = {
 			isa = PBXGroup;
 			children = (
+				B7A54F3429BD7BA300B12B96 /* Info.plist */,
 				B70413A429BC811D00247443 /* GShotDetectApp.swift */,
 				B70413A629BC811D00247443 /* ContentView.swift */,
 				B70413A829BC811D00247443 /* Assets.xcassets */,
@@ -62,6 +66,7 @@
 		B70413AA29BC811D00247443 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				B74528B229BD8FB80012B22A /* Gunshotdetect.mlmodel */,
 				B70413AB29BC811D00247443 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -139,6 +144,7 @@
 			files = (
 				B70413A729BC811D00247443 /* ContentView.swift in Sources */,
 				B70413A529BC811D00247443 /* GShotDetectApp.swift in Sources */,
+				B74528B329BD8FB80012B22A /* Gunshotdetect.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +275,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GShotDetect/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GShotDetect/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Using microphone to test against trained model";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +305,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GShotDetect/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GShotDetect/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Using microphone to test against trained model";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
